@@ -4,12 +4,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-    useEffect(() => {
-        init()
-            .then(() => {
-                hello('World!');
-            })
-    }, [])
+	useEffect(() => {
+		init().then(() => {
+			hello('World!');
+		});
+	}, []);
 	return (
 		<div className='App'>
 			<header className='App-header'>

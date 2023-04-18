@@ -1,0 +1,19 @@
+name: build
+
+on: [push, pull_request]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+            - name: Install node dependencies
+              run: |
+                cd client \
+                yarn
+            - name: Format code
+              run: make pretty
+            - name: Build app
+              run: make build
+
