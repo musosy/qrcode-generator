@@ -3,7 +3,7 @@ start:
 
 
 build-client:
-	(cd client ; yarn build)
+	(cd client ; yarn ; yarn build)
 
 build-wasm:
 	(cd libs ; make build)
