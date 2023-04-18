@@ -15,3 +15,7 @@ build:
 pretty:
 	(cd libs ; cargo fmt)
 	(cd client ; yarn run pretty)
+
+prod:
+	make build
+	(cd client ; yarn run prod)
