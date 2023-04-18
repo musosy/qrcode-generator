@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import init, { hello } from 'qrgen';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+    useEffect(() => {
+        init()
+            .then(() => {
+                hello('World!');
+            })
+    }, [])
 	return (
 		<div className='App'>
 			<header className='App-header'>
