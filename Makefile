@@ -1,9 +1,9 @@
 start:
-	(cd client ; yarn start)
-
+	yarn start
 
 build-client:
-	(cd client ; yarn ; yarn build)
+	yarn
+	yarn build
 
 build-wasm:
 	(cd libs ; make build)
@@ -14,8 +14,8 @@ build:
 
 pretty:
 	(cd libs ; cargo fmt)
-	(cd client ; yarn run pretty)
+	yarn run pretty
 
 prod:
 	make build
-	(cd client ; yarn run prod)
+	yarn run prod
