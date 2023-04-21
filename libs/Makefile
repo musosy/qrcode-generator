@@ -1,5 +1,5 @@
 build:
-	(cd qrgen ; make build)
+	(cd qrgen ; $(MAKE) build)
 
 test:
-	(cd qrgen ; make test)
+	(cd qrgen ; $(MAKE) test)
