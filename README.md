@@ -23,6 +23,11 @@ To build the client run:
 make build-client
 ```
 
+To do both builds:
+```bash
+make build
+```
+
 To run the client:
 ```bash
 make start
@@ -31,4 +36,9 @@ make start
 To format code:
 ```bash
 make pretty
+```
+
+And finally to start in production mode (build and serve):
+```bash
+make prod
 ```
